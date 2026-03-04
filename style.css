@@ -1,3 +1,28 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html,body{
+ height: 100%;
+ width: 100%;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 nav-menu{
-    background-color: blue;
+    position: fixed;
+    display: flex;
 }
