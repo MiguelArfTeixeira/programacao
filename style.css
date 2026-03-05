@@ -61,6 +61,11 @@ background-color: orangered;
     color: #fff;
 }
 
+#Fanta{
+position: absolute;
+width: 50%;
+}
+
 hero img{
     width: 50px;
 }
