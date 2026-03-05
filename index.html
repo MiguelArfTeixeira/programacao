@@ -1,29 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Declaração de caracteres para exibir corretamente os caracteres especiais -->
+    <meta charset="UTF-8">
+    <!-- Meta tag para tornar o site responsivo em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página que será exibido na aba do navegador -->
+    <title>Fanta</title>
+    <!-- Link para o arquivo de estilo CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Div principal que envolve todo o conteúdo da página -->
     <div id="main">
+        
+        <!-- Menu de navegação -->
         <nav class="nav-container">
-        <a href="#">Logo</a>
-         <div class="nav-menu">
-            <a href="#">Home</a>
-            <a href="#">Produtos</a>
-            <a href="#">Loja</a>
-            <a href="#">Contato</a>
+            <!-- Logo que é um link, pode ser usado para voltar para a página inicial -->
+            <a href="#" class="logo">Logo</a>
+            
+            <!-- Menu de navegação com links -->
+            <div class="nav-menu">
+                <a href="#">Home</a>
+                <a href="#">Produtos</a>
+                <a href="#">Loja</a>
+                <a href="#">Contato</a>
+            </div>
+            
+            <!-- Ícone de menu (imagem) que pode ser usado para abrir um menu em dispositivos móveis -->
+            <img src="/Assets/menu.png" alt="Menu" class="menu-icon">
+        </nav>
+
+        <!-- Seção Hero (principal) -->
+        <div class="hero">
+            <!-- Título principal -->
+            <h1>Fanta</h1>
+            
+            <!-- Div que contém as imagens da seção hero -->
+            <div class="hero-images">
+                <!-- Imagens com IDs para identificá-las e estilizar individualmente -->
+                <img id="laranja-cortada" src="./Assets/orange2.png" alt="Laranja Cortada">
+                <img id="Fanta" src="./Assets/fanta.png" alt="Fanta">
+                <img id="Laranja" src="./Assets/orange.png" alt="Laranja">
+                <img id="Folha" src="./Assets/leaf.png" alt="Folha">
+                <img id="Folha2" src="./Assets/leaf2.png" alt="Outra Folha">
+                <img id="Folha3" src="./Assets/coconutleaf.png" alt="Folha de Coco">
+            </div>
         </div>
-        <img src="/Assets/menu.png">
-    </nav>
-    <div class="hero">
-        <h1>Fanta</h1>
-        <img id="laranja-cortada" src="./Assets/orange2.png">
-        <img id="Fanta" src="./Assets/fanta.png">
-        <img id="Laranja" src="./Assets/orange.png">
-        <img id="Folha" src="./Assets/leaf.png">
-        <img id="Folha2" src="./Assets/leaf2.png">
-        <img id="Folha3" src="./Assets/coconutleaf.png">
-    </div>
     </div>
 </body>
 </html>
