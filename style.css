@@ -64,6 +64,13 @@ background-color: orangered;
 #Fanta{
 position: absolute;
 width: 50%;
+z-index: 2;
+}
+
+#laranja-cortada{
+    position: absolute;
+    width: 15%;
+    z-index: 2;
 }
 
 hero img{
