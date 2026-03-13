@@ -1,88 +1,221 @@
-/* Resetando margens e paddings padrões */
-* {
+@font-face {
+    font-family: Product Sans;
+    src: url(Fonts/Product\ Sans\ Bold.ttf);
+}
+
+
+
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Product Sans;
 }
 
-/* Estilos gerais do corpo */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+html,
+body{
+    height: 100%;
+    width: 100%;
 }
 
-/* Estilo do cabeçalho */
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+body::-webkit-scrollbar{
+    display: none;
 }
 
-header .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+#main {
+    width: 100%;
+    height: 100vh;
+    background-color: orangered;
+}
+    
+.nav-container{
+    position: fixed;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    z-index: 99;
+
 }
 
-header h1 {
-    font-size: 2rem;
+.nav-container img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
+.nav-container a{
+    background-color: white;
     text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
-    transition: color 0.3s;
+    font-size: 24px;
+
 }
 
-nav ul li a:hover {
-    color: #f4b400;
+.nav-menu{
+    display: flex;
+    gap: 50px;
 }
 
-/* Estilo do conteúdo principal */
-main {
-    padding: 20px 0;
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(150deg, rgb(255,166,0), rgb(255,94,0));
 }
 
-.container {
+.hero h1{
+    background-color: #fff;
+    font-size: 25vw;
+}
+
+#fanta{
+    position: absolute;
+    width: 40%;
+    z-index: 2;
+}
+
+#laranja-cortada{
+    position: absolute;
+    width: 15%;
+    top: 10%;
+    left: 32%;
+    z-index: 2;
+}
+
+#laranja{
+    position: absolute;
+    width: 20%;
+    z-index: 3;
+    top: 55%;
+    right: 30%;
+}
+
+#folha{
+    position: absolute;
+    width: 18%;
+    z-index: 2;
+    top: 10%;
+    left: 0%;
+    transform:rotate(60deg);
+}
+
+#folha2{
+    position: absolute;
+    top: 70%;
+    width: 12%;
+    left: 80%;
+    transform: rotate(-90deg);
+}
+
+#folha3{
+    position:absolute ;
+    width: 20%;
+    top: 10%;
+    right: 0%;
+}
+
+.two{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #4d231c;
+}
+
+.left-side,
+.right-side {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    width: 50%;
+    height: 100%;
+}
+
+.left-side svg{
+    margin-top: 50vh;
     width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    transform: rotateX(50deg)
 }
 
-h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
-/* Estilo do rodapé */
-footer {
-    background: #333;
+.right-side h2{
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
+    font-size: 5vw;
 }
 
-/* Adicionando uma cor de fundo alternada para cada seção */
-section:nth-child(even) {
-    background-color: #e2e2e2;
+.right-side p{
+    color: #fff;
+    font-size: 1vw;
+    width: 80%;
+}
+
+.three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 5vh;
+    background: linear-gradient(150deg, rgb(255,166,0), rgb(255,94,0));
+}
+
+.three img{
+    width: 50px;
+
+}
+
+.card{
+    position: relative;
+    background-color: white;
+    align-items: center;
+    width: 25vw;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    height: 70vh;
+    margin-top: 10vh;
+    border-radius: 20px;
+}
+
+.card h3{
+    margin-top: 40vh;
+    font-size: 3vw;
+    color: #000;
+}
+
+.card button{
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(255,149,0);
+    color: #fff;
+    padding: 1vw 2vw;
+}
+
+#cocacola{
+    position: absolute;
+    top: -15%;
+    width: 60%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#pepsi{
+    position: absolute;
+    top: -15%;
+    width: 85%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.lemon{
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    width: 25vw;
+    transform: translate(-50%, 0%);
 }

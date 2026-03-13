@@ -1,18 +1,67 @@
-// Este é um exemplo de como você pode adicionar um simples comportamento interativo
+var tl = gsap.timeline({
+    scrolltrigger: {
+        trigger: '.two',
+        start: '0% 95%',
+        end: '70% 50%',
+        scrub: true,
+        markers: true,
+    }
+});
 
-document.addEventListener('DOMContentLoaded', () => {
-    const navLinks = document.querySelectorAll('nav ul li a');
-    
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();  // Impede o comportamento padrão de navegação
-            const targetId = link.getAttribute('href').substring(1);
-            const targetSection = document.getElementById(targetId);
+tl.to(
+    '#fanta',
+    {
+        top: '120%',
+        left: '0%',
+    },
+    'orange'
+);
 
-            window.scrollTo({
-                top: targetSection.offsetTop - 50,
-                behavior: 'smooth'
-            });
-        });
-    });
+tl.to(
+    '#laranja-cortada',
+    {
+        top: '160%',
+        left: '23%',
+    },
+    'orange'
+);
+
+tl.to(
+    '#laranja',
+    {
+        widht: '15%',
+        top: '160%',
+        left: '23%',
+    },
+    'orange'
+);
+
+tl.to(
+    '#folha',
+    {
+        rotate: '530deg',
+        top: '110%',
+        left: '70%',
+    },
+    'orange'
+);
+
+tl.to(
+    '#folha2',
+    {
+        rotate: '530deg',
+        top: '110%',
+        left: '0%',
+    },
+    'orange'
+);
+
+var tl2 = gsap.timeline({
+    scrolltrigger: {
+        trigger: '.three',
+        start: '0% 95%',
+        end: '20% 50%%',
+        scrub: true,
+        markers: true,
+    }
 });
