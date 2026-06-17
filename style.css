@@ -1,3 +1,7 @@
 .cabecalho{
-background-color: black;
+background-color: blueviolet
+}
+
+.carta{
+    border-radius: 50%;
 }
